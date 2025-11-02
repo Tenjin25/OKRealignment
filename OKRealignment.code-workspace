@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.formatOnSave": true,
+		"editor.tabSize": 4,
+		"files.autoSave": "afterDelay",
+		"files.autoSaveDelay": 1000,
+		"liveServer.settings.donotShowInfoMsg": true,
+		"liveServer.settings.port": 8000
+	},
+	"extensions": {
+		"recommendations": [
+			"ritwickdey.liveserver",
+			"ecmel.vscode-html-css",
+			"formulahendry.auto-rename-tag"
+		]
+	}
+}
