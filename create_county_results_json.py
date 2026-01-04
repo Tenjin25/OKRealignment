@@ -29,6 +29,46 @@ def normalize_county_name(county):
         normalized = 'LE FLORE'
     return normalized
 
+def title_case_name(name):
+    """Convert name to proper title case, handling special cases."""
+    if not name:
+        return name
+    
+    # Words that should stay lowercase (unless first word)
+    lowercase_words = {'of', 'the', 'and', 'for', 'in', 'on', 'at', 'to', 'a', 'an'}
+    
+    # Special case abbreviations that should stay uppercase
+    uppercase_abbrevs = {'US', 'USA', 'II', 'III', 'IV', 'JR', 'SR', 'MC', 'MAC'}
+    
+    words = name.split()
+    result = []
+    
+    for i, word in enumerate(words):
+        # Remove punctuation for checking
+        word_clean = word.strip('.,()"\'')
+        
+        # Check if it's an abbreviation that should stay uppercase
+        if word_clean.upper() in uppercase_abbrevs:
+            result.append(word_clean.upper())
+        # Check if it should be lowercase (not first word)
+        elif i > 0 and word_clean.lower() in lowercase_words:
+            result.append(word_clean.lower())
+        # Handle names like McDonald, O'Brien
+        elif word_clean.startswith(("Mc", "MC", "Mac", "MAC")) and len(word_clean) > 2:
+            if word_clean[:2].upper() == "MC":
+                result.append("Mc" + word_clean[2:].capitalize())
+            elif word_clean[:3].upper() == "MAC":
+                result.append("Mac" + word_clean[3:].capitalize())
+            else:
+                result.append(word_clean.capitalize())
+        elif "'" in word_clean:
+            parts = word_clean.split("'")
+            result.append("'".join([p.capitalize() for p in parts]))
+        else:
+            result.append(word_clean.capitalize())
+    
+    return ' '.join(result)
+
 def clean_contest_name(contest_name):
     """Clean contest names by removing common prefixes like 'FOR' and 'ELECTORS FOR'."""
     cleaned = contest_name.strip().upper()
@@ -112,6 +152,11 @@ def process_county_results(county, candidates, year, contest_name):
     # Sort by votes
     sorted_candidates = sorted(candidates, key=lambda x: x['votes'], reverse=True)
     
+    # Normalize candidate dictionaries (handle both 'name' and 'candidate' keys)
+    for c in candidates:
+        if 'candidate' in c and 'name' not in c:
+            c['name'] = c['candidate']
+    
     # Find dem and rep candidates
     dem_candidate = next((c for c in candidates if c['party'] == 'DEM'), None)
     rep_candidate = next((c for c in candidates if c['party'] == 'REP'), None)
@@ -148,8 +193,8 @@ def process_county_results(county, candidates, year, contest_name):
         "county": county,
         "contest": contest_name,
         "year": str(year),
-        "dem_candidate": dem_candidate['candidate'] if dem_candidate else "",
-        "rep_candidate": rep_candidate['candidate'] if rep_candidate else "",
+        "dem_candidate": title_case_name(dem_candidate['name']) if dem_candidate else None,
+        "rep_candidate": title_case_name(rep_candidate['name']) if rep_candidate else None,
         "dem_votes": dem_votes,
         "rep_votes": rep_votes,
         "other_votes": other_votes,
@@ -191,7 +236,22 @@ def parse_old_format_csv(filepath, year, office_name):
         
         if has_separate_party_row:
             # 2000 format: candidate names above, parties below
+            # For presidential elections, format is:
+            # Row 0: GEORGE W. BUSH, PAT BUCHANAN, AL GORE, etc.
+            # Row 1: and, and, and
+            # Row 2: DICK CHENEY, EZOLA FOSTER, JOE LIEBERMAN (VP names)
+            # Row 3: Republican, Reform, Democratic (parties)
+            # We need the first row with actual candidate names, not the VP row
             candidate_row_idx = header_idx - 1
+            
+            # Check if row before VP names is the "and" row (indicating presidential format)
+            if header_idx >= 2:
+                check_row = csv.reader([lines[header_idx - 2]], skipinitialspace=True)
+                check_values = next(check_row)
+                if check_values and len(check_values) > 1 and any('and' in str(v).lower().strip() for v in check_values[1:]):
+                    # This is presidential format - go to row 0 (header_idx - 3)
+                    candidate_row_idx = header_idx - 3
+            
             candidate_reader = csv.reader([lines[candidate_row_idx]], skipinitialspace=True)
             candidate_names = next(candidate_reader)
             
