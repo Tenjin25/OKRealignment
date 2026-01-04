@@ -69,6 +69,23 @@ def title_case_name(name):
     
     return ' '.join(result)
 
+def extract_presidential_candidate(full_name):
+    """
+    Extract just the presidential candidate name from strings like 'JOHN McCAIN and SARAH PALIN'.
+    Returns the name before ' and ' if present, otherwise returns the full name.
+    """
+    if not full_name:
+        return full_name
+    
+    # Check if this is a presidential/VP ticket (contains " and ")
+    if ' and ' in full_name.lower():
+        # Split on " and " (case-insensitive) and take the first part
+        parts = full_name.split(' and ')
+        if len(parts) >= 2:
+            return parts[0].strip()
+    
+    return full_name
+
 def clean_contest_name(contest_name):
     """Clean contest names by removing common prefixes like 'FOR' and 'ELECTORS FOR'."""
     cleaned = contest_name.strip().upper()
@@ -157,9 +174,9 @@ def process_county_results(county, candidates, year, contest_name):
         if 'candidate' in c and 'name' not in c:
             c['name'] = c['candidate']
     
-    # Find dem and rep candidates
-    dem_candidate = next((c for c in candidates if c['party'] == 'DEM'), None)
-    rep_candidate = next((c for c in candidates if c['party'] == 'REP'), None)
+    # Find dem and rep candidates (handle both 'D'/'R' and 'DEM'/'REP' party codes)
+    dem_candidate = next((c for c in candidates if c['party'] in ['DEM', 'D']), None)
+    rep_candidate = next((c for c in candidates if c['party'] in ['REP', 'R']), None)
     
     # Calculate totals
     total_votes = sum(c['votes'] for c in candidates)
@@ -189,12 +206,26 @@ def process_county_results(county, candidates, year, contest_name):
         else:
             all_parties[party] = c['votes']
     
+    # Check if this is a presidential race (to handle VP extraction)
+    is_presidential = 'president' in contest_name.lower()
+    
+    # Extract candidate names (for presidential races, extract only the presidential candidate)
+    dem_name = None
+    if dem_candidate:
+        name = extract_presidential_candidate(dem_candidate['name']) if is_presidential else dem_candidate['name']
+        dem_name = title_case_name(name)
+    
+    rep_name = None
+    if rep_candidate:
+        name = extract_presidential_candidate(rep_candidate['name']) if is_presidential else rep_candidate['name']
+        rep_name = title_case_name(name)
+    
     return {
         "county": county,
         "contest": contest_name,
         "year": str(year),
-        "dem_candidate": title_case_name(dem_candidate['name']) if dem_candidate else None,
-        "rep_candidate": title_case_name(rep_candidate['name']) if rep_candidate else None,
+        "dem_candidate": dem_name,
+        "rep_candidate": rep_name,
         "dem_votes": dem_votes,
         "rep_votes": rep_votes,
         "other_votes": other_votes,
@@ -461,6 +492,10 @@ def parse_precinct_format(filepath, year):
     results_by_office = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
     candidate_party_map = {}
     
+    # Special case for 2014: Split U.S. Senate race into regular and special elections
+    senate_2014_regular = ['Jim Inhofe', 'Matt Silverstein', 'Aaron Delozier', 'Ray Woods', 'Joan Farr']
+    senate_2014_special = ['James Lankford', 'Connie Johnson', 'Mark Beard']
+    
     with open(filepath, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
         
@@ -482,6 +517,13 @@ def parse_precinct_format(filepath, year):
                     continue
                 if 'straight party' in office.lower():
                     continue
+                
+                # Special handling for 2014 Senate races - split into two contests
+                if year == 2014 and office == 'U.S. Senate':
+                    if candidate in senate_2014_regular:
+                        office = 'U.S. Senate'
+                    elif candidate in senate_2014_special:
+                        office = 'U.S. Senate (Special Election)'
                 
                 # Aggregate votes by county
                 key = (county, office, candidate)
@@ -672,7 +714,7 @@ def main():
                 # Define partisan offices we want to keep
                 partisan_offices = [
                     'president',
-                    'u.s. senate', 'us senate',
+                    'u.s. senate', 'us senate', 'united states senator',
                     'governor',
                     'lieutenant governor', 'lt governor', 'ltgov',
                     'attorney general',
@@ -711,7 +753,7 @@ def main():
                         category = 'lieutenant_governor'
                     elif 'governor' in office_lower and 'lieutenant' not in office_lower:
                         category = 'gubernatorial'
-                    elif 'senate' in office_lower and ('u.s' in office_lower or 'us' in office_lower):
+                    elif ('senate' in office_lower or 'senator' in office_lower) and ('u.s' in office_lower or 'us' in office_lower or 'united states' in office_lower):
                         category = 'us_senate'
                     elif 'attorney general' in office_lower:
                         category = 'attorney_general'
