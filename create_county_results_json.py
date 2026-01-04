@@ -29,10 +29,24 @@ def normalize_county_name(county):
         normalized = 'LE FLORE'
     return normalized
 
+def clean_contest_name(contest_name):
+    """Clean contest names by removing common prefixes like 'FOR' and 'ELECTORS FOR'."""
+    cleaned = contest_name.strip().upper()
+    
+    # Remove "ELECTORS FOR " prefix
+    if cleaned.startswith("ELECTORS FOR "):
+        cleaned = cleaned.replace("ELECTORS FOR ", "", 1)
+    
+    # Remove "FOR " prefix
+    if cleaned.startswith("FOR "):
+        cleaned = cleaned.replace("FOR ", "", 1)
+    
+    return cleaned
+
 def get_competitiveness_category(margin_pct, winner):
     """
     Determine competitiveness category based on margin percentage.
-    Returns dict with category, party, code, and color.
+    Returns dict with category, party, code, and color (no range field).
     """
     abs_margin = abs(margin_pct)
     
@@ -351,6 +365,34 @@ def parse_modern_format(filepath, year):
     
     return results_by_office
 
+def parse_county_results_format(filepath, year):
+    """
+    Parse 2022-2024 CountyResults format files.
+    Format: elec_date,county,race_description,cand_name,cand_party,cand_tot_votes
+    """
+    results_by_office = defaultdict(lambda: defaultdict(list))
+    
+    with open(filepath, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        
+        for row in reader:
+            county = normalize_county_name(row.get('county', ''))
+            race = row.get('race_description', '').strip()
+            candidate_full = row.get('cand_name', '').strip()
+            party = row.get('cand_party', '').strip()
+            votes = clean_number(row.get('cand_tot_votes', 0))
+            
+            if county and candidate_full and race and votes > 0:
+                results_by_office[race][county].append({
+                    'candidate': candidate_full,
+                    'party': party,
+                    'votes': votes
+                })
+    
+    return results_by_office
+    
+    return results_by_office
+
 def parse_precinct_format(filepath, year):
     """
     Parse precinct-level files and aggregate by county (2010, 2014).
@@ -485,6 +527,10 @@ def main():
         ('20161108__ok__general__county.csv', 2016, None, 'modern'),
         ('20181106__ok__general__county.csv', 2018, None, 'modern'),
         ('20201103__ok__general__county.csv', 2020, None, 'modern'),
+        
+        # County Results format (2022+)
+        ('20221108_CountyResults.csv', 2022, None, 'county_results'),
+        ('20241105_CountyResults.csv', 2024, None, 'county_results'),
     ]
     
     for file_info in files_to_process:
@@ -541,12 +587,12 @@ def main():
                 # Process each county
                 contest_results = {}
                 for county, candidates in county_results.items():
-                    county_result = process_county_results(county, candidates, year, office_override)
+                    county_result = process_county_results(county, candidates, year, clean_contest_name(office_override))
                     if county_result:
                         contest_results[county] = county_result
                 
                 result['results_by_year'][str(year)][category][contest_id] = {
-                    "contest_name": office_override.upper(),
+                    "contest_name": clean_contest_name(office_override),
                     "results": contest_results
                 }
                 
@@ -558,6 +604,8 @@ def main():
                     results_by_office = parse_2004_2008_format(filepath, year)
                 elif format_type == 'precinct':
                     results_by_office = parse_precinct_format(filepath, year)
+                elif format_type == 'county_results':
+                    results_by_office = parse_county_results_format(filepath, year)
                 else:
                     results_by_office = parse_modern_format(filepath, year)
                 
@@ -626,12 +674,12 @@ def main():
                     # Process each county
                     contest_results = {}
                     for county, candidates in county_results.items():
-                        county_result = process_county_results(county, candidates, year, office)
+                        county_result = process_county_results(county, candidates, year, clean_contest_name(office))
                         if county_result:
                             contest_results[county] = county_result
                     
                     result['results_by_year'][str(year)][category][contest_id] = {
-                        "contest_name": office.upper(),
+                        "contest_name": clean_contest_name(office),
                         "results": contest_results
                     }
                     
