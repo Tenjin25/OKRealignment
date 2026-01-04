@@ -1160,6 +1160,7 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
             let officeLabel = contestName;
             const shortMap = {
               'PRESIDENT AND VICE PRESIDENT OF THE UNITED STATES': 'US President',
+              'PRESIDENT AND VICE PRESIDENT': 'US President',
               'US PRESIDENT': 'US President',
               'PRESIDENT': 'US President',
               'US SENATE': 'US Senate',
@@ -1229,6 +1230,33 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
               'GREENSBORO AUDITORIUM BONDS'
             ];
             if (contestName && unwantedContests.some(unwanted => contestName.toString().toUpperCase().includes(unwanted))) return;
+            
+            // Filter out races with null/empty candidates or unopposed races
+            if (contest && contest.results) {
+              // Get first county to check candidate info
+              const counties = Object.keys(contest.results);
+              if (counties.length > 0) {
+                const firstCountyData = contest.results[counties[0]];
+                
+                // Skip if both major party candidates are null/empty
+                const demCand = firstCountyData.dem_candidate;
+                const repCand = firstCountyData.rep_candidate;
+                if ((!demCand || demCand.trim() === '') && (!repCand || repCand.trim() === '')) {
+                  return; // Skip this contest
+                }
+                
+                // Skip if race is unopposed (only one candidate with votes)
+                const demVotes = firstCountyData.dem_votes || 0;
+                const repVotes = firstCountyData.rep_votes || 0;
+                const twoPartyTotal = firstCountyData.two_party_total || 0;
+                
+                // If only one party has votes, it's unopposed
+                if (twoPartyTotal > 0 && (demVotes === 0 || repVotes === 0)) {
+                  return; // Skip unopposed race
+                }
+              }
+            }
+            
             if (!groupedByOffice[officeLabel]) groupedByOffice[officeLabel] = [];
             groupedByOffice[officeLabel].push({ year, cat, contestKey, contestName });
             // For Council of State and Judicial, show all contests
