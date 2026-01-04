@@ -700,7 +700,9 @@ def main():
                     if not is_partisan:
                         continue
                     
-                    contest_id = create_contest_id(office, year)
+                    # Clean the office name first, then create contest_id from cleaned name
+                    cleaned_office = clean_contest_name(office)
+                    contest_id = create_contest_id(cleaned_office, year)
                     
                     # Determine category
                     if 'president' in office_lower:
@@ -734,12 +736,12 @@ def main():
                     # Process each county
                     contest_results = {}
                     for county, candidates in county_results.items():
-                        county_result = process_county_results(county, candidates, year, clean_contest_name(office))
+                        county_result = process_county_results(county, candidates, year, cleaned_office)
                         if county_result:
                             contest_results[county] = county_result
                     
                     result['results_by_year'][str(year)][category][contest_id] = {
-                        "contest_name": clean_contest_name(office),
+                        "contest_name": cleaned_office,
                         "results": contest_results
                     }
                     

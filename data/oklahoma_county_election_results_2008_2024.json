@@ -73383,7 +73383,7 @@
     },
     "2022": {
       "gubernatorial": {
-        "for_governor_2022": {
+        "governor_2022": {
           "contest_name": "GOVERNOR",
           "results": {
             "ADAIR": {
@@ -75469,7 +75469,7 @@
         }
       },
       "lieutenant_governor": {
-        "for_lieutenant_governor_2022": {
+        "lieutenant_governor_2022": {
           "contest_name": "LIEUTENANT GOVERNOR",
           "results": {
             "ADAIR": {
@@ -77478,7 +77478,7 @@
         }
       },
       "attorney_general": {
-        "for_attorney_general_2022": {
+        "attorney_general_2022": {
           "contest_name": "ATTORNEY GENERAL",
           "results": {
             "ADAIR": {
@@ -79410,7 +79410,7 @@
         }
       },
       "state_treasurer": {
-        "for_state_treasurer_2022": {
+        "state_treasurer_2022": {
           "contest_name": "STATE TREASURER",
           "results": {
             "ADAIR": {
@@ -81419,7 +81419,7 @@
         }
       },
       "superintendent": {
-        "for_superintendent_of_public_instruction_2022": {
+        "superintendent_of_public_instruction_2022": {
           "contest_name": "SUPERINTENDENT OF PUBLIC INSTRUCTION",
           "results": {
             "ADAIR": {
@@ -83351,7 +83351,7 @@
         }
       },
       "labor_commissioner": {
-        "for_commissioner_of_labor_2022": {
+        "commissioner_of_labor_2022": {
           "contest_name": "COMMISSIONER OF LABOR",
           "results": {
             "ADAIR": {
@@ -85360,7 +85360,7 @@
         }
       },
       "corporation_commissioner": {
-        "for_corporation_commissioner_2022": {
+        "corporation_commissioner_2022": {
           "contest_name": "CORPORATION COMMISSIONER",
           "results": {
             "ADAIR": {
@@ -87371,7 +87371,7 @@
     },
     "2024": {
       "presidential": {
-        "electors_for_president_and_vice_president_2024": {
+        "president_and_vice_president_2024": {
           "contest_name": "PRESIDENT AND VICE PRESIDENT",
           "results": {
             "ADAIR": {
@@ -89456,7 +89456,7 @@
         }
       },
       "corporation_commissioner": {
-        "for_corporation_commissioner_2024": {
+        "corporation_commissioner_2024": {
           "contest_name": "CORPORATION COMMISSIONER",
           "results": {
             "ADAIR": {
