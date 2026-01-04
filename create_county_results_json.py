@@ -616,6 +616,7 @@ def main():
         # 2004-2008 format
         ('20041102__ok__general__president.csv', 2004, None, '2004'),
         ('20041102__ok__general__corp__commissioner__county.csv', 2004, None, '2004'),
+        ('20041102__ok__general__us__senate__county.csv', 2004, None, '2004'),
         ('20081104__ok__general__president__county.csv', 2008, None, '2008'),
         ('20081104__ok__general__us_senate__county.csv', 2008, None, '2008'),
         ('20081104__ok__general__corp_commissioner__county.csv', 2008, None, '2008'),

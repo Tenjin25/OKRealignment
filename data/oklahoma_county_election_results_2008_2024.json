@@ -6,7 +6,7 @@
     "years_covered": "2000-2020",
     "data_source": "Oklahoma State Election Board",
     "focus": "Clean geographic political patterns",
-    "processed_date": "2026-01-03",
+    "processed_date": "2026-01-04",
     "categorization_system": {
       "competitiveness_scale": {
         "Republican": [
@@ -10074,6 +10074,2015 @@
               "all_parties": {
                 "(D)": 1500,
                 "(R)": 5663
+              }
+            }
+          }
+        }
+      },
+      "us_senate": {
+        "us_senate_2004": {
+          "contest_name": "U.S. SENATE",
+          "results": {
+            "ADAIR": {
+              "county": "ADAIR",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 4049,
+              "rep_votes": 3160,
+              "other_votes": 284,
+              "total_votes": 7493,
+              "two_party_total": 7209,
+              "margin": 889,
+              "margin_pct": 12.33,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "D_SAFE",
+                "color": "#6baed6"
+              },
+              "all_parties": {
+                "DEM": 4049,
+                "REP": 3160,
+                "IND": 284
+              }
+            },
+            "ALFALFA": {
+              "county": "ALFALFA",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 852,
+              "rep_votes": 1522,
+              "other_votes": 249,
+              "total_votes": 2623,
+              "two_party_total": 2374,
+              "margin": 670,
+              "margin_pct": 28.22,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "R_STRONGHOLD",
+                "color": "#cb181d"
+              },
+              "all_parties": {
+                "DEM": 852,
+                "REP": 1522,
+                "IND": 249
+              }
+            },
+            "ATOKA": {
+              "county": "ATOKA",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 2491,
+              "rep_votes": 2273,
+              "other_votes": 272,
+              "total_votes": 5036,
+              "two_party_total": 4764,
+              "margin": 218,
+              "margin_pct": 4.58,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Democratic",
+                "code": "D_LEAN",
+                "color": "#c6dbef"
+              },
+              "all_parties": {
+                "DEM": 2491,
+                "REP": 2273,
+                "IND": 272
+              }
+            },
+            "BEAVER": {
+              "county": "BEAVER",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 579,
+              "rep_votes": 1841,
+              "other_votes": 111,
+              "total_votes": 2531,
+              "two_party_total": 2420,
+              "margin": 1262,
+              "margin_pct": 52.15,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Annihilation",
+                "party": "Republican",
+                "code": "R_ANNIHILATION",
+                "color": "#67000d"
+              },
+              "all_parties": {
+                "DEM": 579,
+                "REP": 1841,
+                "IND": 111
+              }
+            },
+            "BECKHAM": {
+              "county": "BECKHAM",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 3129,
+              "rep_votes": 3645,
+              "other_votes": 556,
+              "total_votes": 7330,
+              "two_party_total": 6774,
+              "margin": 516,
+              "margin_pct": 7.62,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Republican",
+                "code": "R_LIKELY",
+                "color": "#fb6a4a"
+              },
+              "all_parties": {
+                "DEM": 3129,
+                "REP": 3645,
+                "IND": 556
+              }
+            },
+            "BLAINE": {
+              "county": "BLAINE",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 1688,
+              "rep_votes": 2223,
+              "other_votes": 446,
+              "total_votes": 4357,
+              "two_party_total": 3911,
+              "margin": 535,
+              "margin_pct": 13.68,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "R_SAFE",
+                "color": "#ef3b2c"
+              },
+              "all_parties": {
+                "DEM": 1688,
+                "REP": 2223,
+                "IND": 446
+              }
+            },
+            "BRYAN": {
+              "county": "BRYAN",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 7250,
+              "rep_votes": 6026,
+              "other_votes": 817,
+              "total_votes": 14093,
+              "two_party_total": 13276,
+              "margin": 1224,
+              "margin_pct": 9.22,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Democratic",
+                "code": "D_LIKELY",
+                "color": "#9ecae1"
+              },
+              "all_parties": {
+                "DEM": 7250,
+                "REP": 6026,
+                "IND": 817
+              }
+            },
+            "CADDO": {
+              "county": "CADDO",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 5156,
+              "rep_votes": 4205,
+              "other_votes": 903,
+              "total_votes": 10264,
+              "two_party_total": 9361,
+              "margin": 951,
+              "margin_pct": 10.16,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "D_SAFE",
+                "color": "#6baed6"
+              },
+              "all_parties": {
+                "DEM": 5156,
+                "REP": 4205,
+                "IND": 903
+              }
+            },
+            "CANADIAN": {
+              "county": "CANADIAN",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 11738,
+              "rep_votes": 27482,
+              "other_votes": 3202,
+              "total_votes": 42422,
+              "two_party_total": 39220,
+              "margin": 15744,
+              "margin_pct": 40.14,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Annihilation",
+                "party": "Republican",
+                "code": "R_ANNIHILATION",
+                "color": "#67000d"
+              },
+              "all_parties": {
+                "DEM": 11738,
+                "REP": 27482,
+                "IND": 3202
+              }
+            },
+            "CARTER": {
+              "county": "CARTER",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 7943,
+              "rep_votes": 8682,
+              "other_votes": 1722,
+              "total_votes": 18347,
+              "two_party_total": 16625,
+              "margin": 739,
+              "margin_pct": 4.45,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Republican",
+                "code": "R_LEAN",
+                "color": "#fcae91"
+              },
+              "all_parties": {
+                "DEM": 7943,
+                "REP": 8682,
+                "IND": 1722
+              }
+            },
+            "CHEROKEE": {
+              "county": "CHEROKEE",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 10414,
+              "rep_votes": 7140,
+              "other_votes": 613,
+              "total_votes": 18167,
+              "two_party_total": 17554,
+              "margin": 3274,
+              "margin_pct": 18.65,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "D_SAFE",
+                "color": "#6baed6"
+              },
+              "all_parties": {
+                "DEM": 10414,
+                "REP": 7140,
+                "IND": 613
+              }
+            },
+            "CHOCTAW": {
+              "county": "CHOCTAW",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 3438,
+              "rep_votes": 2044,
+              "other_votes": 249,
+              "total_votes": 5731,
+              "two_party_total": 5482,
+              "margin": 1394,
+              "margin_pct": 25.43,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Democratic",
+                "code": "D_STRONGHOLD",
+                "color": "#3182bd"
+              },
+              "all_parties": {
+                "DEM": 3438,
+                "REP": 2044,
+                "IND": 249
+              }
+            },
+            "CIMARRON": {
+              "county": "CIMARRON",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 375,
+              "rep_votes": 959,
+              "other_votes": 61,
+              "total_votes": 1395,
+              "two_party_total": 1334,
+              "margin": 584,
+              "margin_pct": 43.78,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Annihilation",
+                "party": "Republican",
+                "code": "R_ANNIHILATION",
+                "color": "#67000d"
+              },
+              "all_parties": {
+                "DEM": 375,
+                "REP": 959,
+                "IND": 61
+              }
+            },
+            "CLEVELAND": {
+              "county": "CLEVELAND",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 36248,
+              "rep_votes": 54431,
+              "other_votes": 7714,
+              "total_votes": 98393,
+              "two_party_total": 90679,
+              "margin": 18183,
+              "margin_pct": 20.05,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "R_STRONGHOLD",
+                "color": "#cb181d"
+              },
+              "all_parties": {
+                "DEM": 36248,
+                "REP": 54431,
+                "IND": 7714
+              }
+            },
+            "COAL": {
+              "county": "COAL",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 1488,
+              "rep_votes": 945,
+              "other_votes": 142,
+              "total_votes": 2575,
+              "two_party_total": 2433,
+              "margin": 543,
+              "margin_pct": 22.32,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Democratic",
+                "code": "D_STRONGHOLD",
+                "color": "#3182bd"
+              },
+              "all_parties": {
+                "DEM": 1488,
+                "REP": 945,
+                "IND": 142
+              }
+            },
+            "COMANCHE": {
+              "county": "COMANCHE",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 14762,
+              "rep_votes": 15393,
+              "other_votes": 2462,
+              "total_votes": 32617,
+              "two_party_total": 30155,
+              "margin": 631,
+              "margin_pct": 2.09,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Republican",
+                "code": "R_LEAN",
+                "color": "#fcae91"
+              },
+              "all_parties": {
+                "DEM": 14762,
+                "REP": 15393,
+                "IND": 2462
+              }
+            },
+            "COTTON": {
+              "county": "COTTON",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 1307,
+              "rep_votes": 1085,
+              "other_votes": 199,
+              "total_votes": 2591,
+              "two_party_total": 2392,
+              "margin": 222,
+              "margin_pct": 9.28,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Democratic",
+                "code": "D_LIKELY",
+                "color": "#9ecae1"
+              },
+              "all_parties": {
+                "DEM": 1307,
+                "REP": 1085,
+                "IND": 199
+              }
+            },
+            "CRAIG": {
+              "county": "CRAIG",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 3351,
+              "rep_votes": 2791,
+              "other_votes": 244,
+              "total_votes": 6386,
+              "two_party_total": 6142,
+              "margin": 560,
+              "margin_pct": 9.12,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Democratic",
+                "code": "D_LIKELY",
+                "color": "#9ecae1"
+              },
+              "all_parties": {
+                "DEM": 3351,
+                "REP": 2791,
+                "IND": 244
+              }
+            },
+            "CREEK": {
+              "county": "CREEK",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 12046,
+              "rep_votes": 15205,
+              "other_votes": 1325,
+              "total_votes": 28576,
+              "two_party_total": 27251,
+              "margin": 3159,
+              "margin_pct": 11.59,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "R_SAFE",
+                "color": "#ef3b2c"
+              },
+              "all_parties": {
+                "DEM": 12046,
+                "REP": 15205,
+                "IND": 1325
+              }
+            },
+            "CUSTER": {
+              "county": "CUSTER",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 3793,
+              "rep_votes": 5860,
+              "other_votes": 854,
+              "total_votes": 10507,
+              "two_party_total": 9653,
+              "margin": 2067,
+              "margin_pct": 21.41,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "R_STRONGHOLD",
+                "color": "#cb181d"
+              },
+              "all_parties": {
+                "DEM": 3793,
+                "REP": 5860,
+                "IND": 854
+              }
+            },
+            "DELAWARE": {
+              "county": "DELAWARE",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 7584,
+              "rep_votes": 7324,
+              "other_votes": 563,
+              "total_votes": 15471,
+              "two_party_total": 14908,
+              "margin": 260,
+              "margin_pct": 1.74,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Democratic",
+                "code": "D_LEAN",
+                "color": "#c6dbef"
+              },
+              "all_parties": {
+                "DEM": 7584,
+                "REP": 7324,
+                "IND": 563
+              }
+            },
+            "DEWEY": {
+              "county": "DEWEY",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 805,
+              "rep_votes": 1209,
+              "other_votes": 204,
+              "total_votes": 2218,
+              "two_party_total": 2014,
+              "margin": 404,
+              "margin_pct": 20.06,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "R_STRONGHOLD",
+                "color": "#cb181d"
+              },
+              "all_parties": {
+                "DEM": 805,
+                "REP": 1209,
+                "IND": 204
+              }
+            },
+            "ELLIS": {
+              "county": "ELLIS",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 678,
+              "rep_votes": 1178,
+              "other_votes": 206,
+              "total_votes": 2062,
+              "two_party_total": 1856,
+              "margin": 500,
+              "margin_pct": 26.94,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "R_STRONGHOLD",
+                "color": "#cb181d"
+              },
+              "all_parties": {
+                "DEM": 678,
+                "REP": 1178,
+                "IND": 206
+              }
+            },
+            "GARFIELD": {
+              "county": "GARFIELD",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 7122,
+              "rep_votes": 13469,
+              "other_votes": 2432,
+              "total_votes": 23023,
+              "two_party_total": 20591,
+              "margin": 6347,
+              "margin_pct": 30.82,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Dominant",
+                "party": "Republican",
+                "code": "R_DOMINANT",
+                "color": "#a50f15"
+              },
+              "all_parties": {
+                "DEM": 7122,
+                "REP": 13469,
+                "IND": 2432
+              }
+            },
+            "GARVIN": {
+              "county": "GARVIN",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 4674,
+              "rep_votes": 5408,
+              "other_votes": 1075,
+              "total_votes": 11157,
+              "two_party_total": 10082,
+              "margin": 734,
+              "margin_pct": 7.28,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Republican",
+                "code": "R_LIKELY",
+                "color": "#fb6a4a"
+              },
+              "all_parties": {
+                "DEM": 4674,
+                "REP": 5408,
+                "IND": 1075
+              }
+            },
+            "GRADY": {
+              "county": "GRADY",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 7115,
+              "rep_votes": 10820,
+              "other_votes": 1928,
+              "total_votes": 19863,
+              "two_party_total": 17935,
+              "margin": 3705,
+              "margin_pct": 20.66,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "R_STRONGHOLD",
+                "color": "#cb181d"
+              },
+              "all_parties": {
+                "DEM": 7115,
+                "REP": 10820,
+                "IND": 1928
+              }
+            },
+            "GRANT": {
+              "county": "GRANT",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 922,
+              "rep_votes": 1290,
+              "other_votes": 289,
+              "total_votes": 2501,
+              "two_party_total": 2212,
+              "margin": 368,
+              "margin_pct": 16.64,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "R_SAFE",
+                "color": "#ef3b2c"
+              },
+              "all_parties": {
+                "DEM": 922,
+                "REP": 1290,
+                "IND": 289
+              }
+            },
+            "GREER": {
+              "county": "GREER",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 1058,
+              "rep_votes": 1011,
+              "other_votes": 131,
+              "total_votes": 2200,
+              "two_party_total": 2069,
+              "margin": 47,
+              "margin_pct": 2.27,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Democratic",
+                "code": "D_LEAN",
+                "color": "#c6dbef"
+              },
+              "all_parties": {
+                "DEM": 1058,
+                "REP": 1011,
+                "IND": 131
+              }
+            },
+            "HARMON": {
+              "county": "HARMON",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 587,
+              "rep_votes": 495,
+              "other_votes": 83,
+              "total_votes": 1165,
+              "two_party_total": 1082,
+              "margin": 92,
+              "margin_pct": 8.5,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Democratic",
+                "code": "D_LIKELY",
+                "color": "#9ecae1"
+              },
+              "all_parties": {
+                "DEM": 587,
+                "REP": 495,
+                "IND": 83
+              }
+            },
+            "HARPER": {
+              "county": "HARPER",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 526,
+              "rep_votes": 955,
+              "other_votes": 146,
+              "total_votes": 1627,
+              "two_party_total": 1481,
+              "margin": 429,
+              "margin_pct": 28.97,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "R_STRONGHOLD",
+                "color": "#cb181d"
+              },
+              "all_parties": {
+                "DEM": 526,
+                "REP": 955,
+                "IND": 146
+              }
+            },
+            "HASKELL": {
+              "county": "HASKELL",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 3045,
+              "rep_votes": 2118,
+              "other_votes": 130,
+              "total_votes": 5293,
+              "two_party_total": 5163,
+              "margin": 927,
+              "margin_pct": 17.95,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "D_SAFE",
+                "color": "#6baed6"
+              },
+              "all_parties": {
+                "DEM": 3045,
+                "REP": 2118,
+                "IND": 130
+              }
+            },
+            "HUGHES": {
+              "county": "HUGHES",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 2811,
+              "rep_votes": 2132,
+              "other_votes": 350,
+              "total_votes": 5293,
+              "two_party_total": 4943,
+              "margin": 679,
+              "margin_pct": 13.74,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "D_SAFE",
+                "color": "#6baed6"
+              },
+              "all_parties": {
+                "DEM": 2811,
+                "REP": 2132,
+                "IND": 350
+              }
+            },
+            "JACKSON": {
+              "county": "JACKSON",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 3471,
+              "rep_votes": 5005,
+              "other_votes": 639,
+              "total_votes": 9115,
+              "two_party_total": 8476,
+              "margin": 1534,
+              "margin_pct": 18.1,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "R_SAFE",
+                "color": "#ef3b2c"
+              },
+              "all_parties": {
+                "DEM": 3471,
+                "REP": 5005,
+                "IND": 639
+              }
+            },
+            "JEFFERSON": {
+              "county": "JEFFERSON",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 1360,
+              "rep_votes": 997,
+              "other_votes": 194,
+              "total_votes": 2551,
+              "two_party_total": 2357,
+              "margin": 363,
+              "margin_pct": 15.4,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "D_SAFE",
+                "color": "#6baed6"
+              },
+              "all_parties": {
+                "DEM": 1360,
+                "REP": 997,
+                "IND": 194
+              }
+            },
+            "JOHNSTON": {
+              "county": "JOHNSTON",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 2384,
+              "rep_votes": 1616,
+              "other_votes": 279,
+              "total_votes": 4279,
+              "two_party_total": 4000,
+              "margin": 768,
+              "margin_pct": 19.2,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "D_SAFE",
+                "color": "#6baed6"
+              },
+              "all_parties": {
+                "DEM": 2384,
+                "REP": 1616,
+                "IND": 279
+              }
+            },
+            "KAY": {
+              "county": "KAY",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 7136,
+              "rep_votes": 11141,
+              "other_votes": 1614,
+              "total_votes": 19891,
+              "two_party_total": 18277,
+              "margin": 4005,
+              "margin_pct": 21.91,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "R_STRONGHOLD",
+                "color": "#cb181d"
+              },
+              "all_parties": {
+                "DEM": 7136,
+                "REP": 11141,
+                "IND": 1614
+              }
+            },
+            "KINGFISHER": {
+              "county": "KINGFISHER",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 1568,
+              "rep_votes": 4410,
+              "other_votes": 592,
+              "total_votes": 6570,
+              "two_party_total": 5978,
+              "margin": 2842,
+              "margin_pct": 47.54,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Annihilation",
+                "party": "Republican",
+                "code": "R_ANNIHILATION",
+                "color": "#67000d"
+              },
+              "all_parties": {
+                "DEM": 1568,
+                "REP": 4410,
+                "IND": 592
+              }
+            },
+            "KIOWA": {
+              "county": "KIOWA",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 2066,
+              "rep_votes": 1593,
+              "other_votes": 309,
+              "total_votes": 3968,
+              "two_party_total": 3659,
+              "margin": 473,
+              "margin_pct": 12.93,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "D_SAFE",
+                "color": "#6baed6"
+              },
+              "all_parties": {
+                "DEM": 2066,
+                "REP": 1593,
+                "IND": 309
+              }
+            },
+            "LATIMER": {
+              "county": "LATIMER",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 2493,
+              "rep_votes": 1731,
+              "other_votes": 205,
+              "total_votes": 4429,
+              "two_party_total": 4224,
+              "margin": 762,
+              "margin_pct": 18.04,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "D_SAFE",
+                "color": "#6baed6"
+              },
+              "all_parties": {
+                "DEM": 2493,
+                "REP": 1731,
+                "IND": 205
+              }
+            },
+            "LE FLORE": {
+              "county": "LE FLORE",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 8813,
+              "rep_votes": 7759,
+              "other_votes": 567,
+              "total_votes": 17139,
+              "two_party_total": 16572,
+              "margin": 1054,
+              "margin_pct": 6.36,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Democratic",
+                "code": "D_LIKELY",
+                "color": "#9ecae1"
+              },
+              "all_parties": {
+                "DEM": 8813,
+                "REP": 7759,
+                "IND": 567
+              }
+            },
+            "LINCOLN": {
+              "county": "LINCOLN",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 5025,
+              "rep_votes": 7690,
+              "other_votes": 1333,
+              "total_votes": 14048,
+              "two_party_total": 12715,
+              "margin": 2665,
+              "margin_pct": 20.96,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "R_STRONGHOLD",
+                "color": "#cb181d"
+              },
+              "all_parties": {
+                "DEM": 5025,
+                "REP": 7690,
+                "IND": 1333
+              }
+            },
+            "LOGAN": {
+              "county": "LOGAN",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 5496,
+              "rep_votes": 9432,
+              "other_votes": 1224,
+              "total_votes": 16152,
+              "two_party_total": 14928,
+              "margin": 3936,
+              "margin_pct": 26.37,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "R_STRONGHOLD",
+                "color": "#cb181d"
+              },
+              "all_parties": {
+                "DEM": 5496,
+                "REP": 9432,
+                "IND": 1224
+              }
+            },
+            "LOVE": {
+              "county": "LOVE",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 1898,
+              "rep_votes": 1519,
+              "other_votes": 342,
+              "total_votes": 3759,
+              "two_party_total": 3417,
+              "margin": 379,
+              "margin_pct": 11.09,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "D_SAFE",
+                "color": "#6baed6"
+              },
+              "all_parties": {
+                "DEM": 1898,
+                "REP": 1519,
+                "IND": 342
+              }
+            },
+            "MCCLAIN": {
+              "county": "MCCLAIN",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 4552,
+              "rep_votes": 7845,
+              "other_votes": 1197,
+              "total_votes": 13594,
+              "two_party_total": 12397,
+              "margin": 3293,
+              "margin_pct": 26.56,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "R_STRONGHOLD",
+                "color": "#cb181d"
+              },
+              "all_parties": {
+                "DEM": 4552,
+                "REP": 7845,
+                "IND": 1197
+              }
+            },
+            "MCCURTAIN": {
+              "county": "MCCURTAIN",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 5211,
+              "rep_votes": 5390,
+              "other_votes": 357,
+              "total_votes": 10958,
+              "two_party_total": 10601,
+              "margin": 179,
+              "margin_pct": 1.69,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Republican",
+                "code": "R_LEAN",
+                "color": "#fcae91"
+              },
+              "all_parties": {
+                "DEM": 5211,
+                "REP": 5390,
+                "IND": 357
+              }
+            },
+            "MCINTOSH": {
+              "county": "MCINTOSH",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 5259,
+              "rep_votes": 3685,
+              "other_votes": 204,
+              "total_votes": 9148,
+              "two_party_total": 8944,
+              "margin": 1574,
+              "margin_pct": 17.6,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "D_SAFE",
+                "color": "#6baed6"
+              },
+              "all_parties": {
+                "DEM": 5259,
+                "REP": 3685,
+                "IND": 204
+              }
+            },
+            "MAJOR": {
+              "county": "MAJOR",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 961,
+              "rep_votes": 2333,
+              "other_votes": 316,
+              "total_votes": 3610,
+              "two_party_total": 3294,
+              "margin": 1372,
+              "margin_pct": 41.65,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Annihilation",
+                "party": "Republican",
+                "code": "R_ANNIHILATION",
+                "color": "#67000d"
+              },
+              "all_parties": {
+                "DEM": 961,
+                "REP": 2333,
+                "IND": 316
+              }
+            },
+            "MARSHALL": {
+              "county": "MARSHALL",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 2554,
+              "rep_votes": 2364,
+              "other_votes": 436,
+              "total_votes": 5354,
+              "two_party_total": 4918,
+              "margin": 190,
+              "margin_pct": 3.86,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Democratic",
+                "code": "D_LEAN",
+                "color": "#c6dbef"
+              },
+              "all_parties": {
+                "DEM": 2554,
+                "REP": 2364,
+                "IND": 436
+              }
+            },
+            "MAYES": {
+              "county": "MAYES",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 8893,
+              "rep_votes": 7343,
+              "other_votes": 559,
+              "total_votes": 16795,
+              "two_party_total": 16236,
+              "margin": 1550,
+              "margin_pct": 9.55,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Democratic",
+                "code": "D_LIKELY",
+                "color": "#9ecae1"
+              },
+              "all_parties": {
+                "DEM": 8893,
+                "REP": 7343,
+                "IND": 559
+              }
+            },
+            "MURRAY": {
+              "county": "MURRAY",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 2793,
+              "rep_votes": 2385,
+              "other_votes": 527,
+              "total_votes": 5705,
+              "two_party_total": 5178,
+              "margin": 408,
+              "margin_pct": 7.88,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Democratic",
+                "code": "D_LIKELY",
+                "color": "#9ecae1"
+              },
+              "all_parties": {
+                "DEM": 2793,
+                "REP": 2385,
+                "IND": 527
+              }
+            },
+            "MUSKOGEE": {
+              "county": "MUSKOGEE",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 13906,
+              "rep_votes": 13093,
+              "other_votes": 655,
+              "total_votes": 27654,
+              "two_party_total": 26999,
+              "margin": 813,
+              "margin_pct": 3.01,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Democratic",
+                "code": "D_LEAN",
+                "color": "#c6dbef"
+              },
+              "all_parties": {
+                "DEM": 13906,
+                "REP": 13093,
+                "IND": 655
+              }
+            },
+            "NOBLE": {
+              "county": "NOBLE",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 1700,
+              "rep_votes": 2955,
+              "other_votes": 603,
+              "total_votes": 5258,
+              "two_party_total": 4655,
+              "margin": 1255,
+              "margin_pct": 26.96,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "R_STRONGHOLD",
+                "color": "#cb181d"
+              },
+              "all_parties": {
+                "DEM": 1700,
+                "REP": 2955,
+                "IND": 603
+              }
+            },
+            "NOWATA": {
+              "county": "NOWATA",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 2164,
+              "rep_votes": 2080,
+              "other_votes": 186,
+              "total_votes": 4430,
+              "two_party_total": 4244,
+              "margin": 84,
+              "margin_pct": 1.98,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Democratic",
+                "code": "D_LEAN",
+                "color": "#c6dbef"
+              },
+              "all_parties": {
+                "DEM": 2164,
+                "REP": 2080,
+                "IND": 186
+              }
+            },
+            "OKFUSKEE": {
+              "county": "OKFUSKEE",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 2193,
+              "rep_votes": 1859,
+              "other_votes": 189,
+              "total_votes": 4241,
+              "two_party_total": 4052,
+              "margin": 334,
+              "margin_pct": 8.24,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Democratic",
+                "code": "D_LIKELY",
+                "color": "#9ecae1"
+              },
+              "all_parties": {
+                "DEM": 2193,
+                "REP": 1859,
+                "IND": 189
+              }
+            },
+            "OKLAHOMA": {
+              "county": "OKLAHOMA",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 102171,
+              "rep_votes": 147793,
+              "other_votes": 18241,
+              "total_votes": 268205,
+              "two_party_total": 249964,
+              "margin": 45622,
+              "margin_pct": 18.25,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "R_SAFE",
+                "color": "#ef3b2c"
+              },
+              "all_parties": {
+                "DEM": 102171,
+                "REP": 147793,
+                "IND": 18241
+              }
+            },
+            "OKMULGEE": {
+              "county": "OKMULGEE",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 8775,
+              "rep_votes": 6360,
+              "other_votes": 493,
+              "total_votes": 15628,
+              "two_party_total": 15135,
+              "margin": 2415,
+              "margin_pct": 15.96,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "D_SAFE",
+                "color": "#6baed6"
+              },
+              "all_parties": {
+                "DEM": 8775,
+                "REP": 6360,
+                "IND": 493
+              }
+            },
+            "OSAGE": {
+              "county": "OSAGE",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 9703,
+              "rep_votes": 8746,
+              "other_votes": 913,
+              "total_votes": 19362,
+              "two_party_total": 18449,
+              "margin": 957,
+              "margin_pct": 5.19,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Democratic",
+                "code": "D_LEAN",
+                "color": "#c6dbef"
+              },
+              "all_parties": {
+                "DEM": 9703,
+                "REP": 8746,
+                "IND": 913
+              }
+            },
+            "OTTAWA": {
+              "county": "OTTAWA",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 6742,
+              "rep_votes": 5234,
+              "other_votes": 407,
+              "total_votes": 12383,
+              "two_party_total": 11976,
+              "margin": 1508,
+              "margin_pct": 12.59,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "D_SAFE",
+                "color": "#6baed6"
+              },
+              "all_parties": {
+                "DEM": 6742,
+                "REP": 5234,
+                "IND": 407
+              }
+            },
+            "PAWNEE": {
+              "county": "PAWNEE",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 3116,
+              "rep_votes": 3416,
+              "other_votes": 387,
+              "total_votes": 6919,
+              "two_party_total": 6532,
+              "margin": 300,
+              "margin_pct": 4.59,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Republican",
+                "code": "R_LEAN",
+                "color": "#fcae91"
+              },
+              "all_parties": {
+                "DEM": 3116,
+                "REP": 3416,
+                "IND": 387
+              }
+            },
+            "PAYNE": {
+              "county": "PAYNE",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 11229,
+              "rep_votes": 16047,
+              "other_votes": 2098,
+              "total_votes": 29374,
+              "two_party_total": 27276,
+              "margin": 4818,
+              "margin_pct": 17.66,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "R_SAFE",
+                "color": "#ef3b2c"
+              },
+              "all_parties": {
+                "DEM": 11229,
+                "REP": 16047,
+                "IND": 2098
+              }
+            },
+            "PITTSBURG": {
+              "county": "PITTSBURG",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 9818,
+              "rep_votes": 7684,
+              "other_votes": 966,
+              "total_votes": 18468,
+              "two_party_total": 17502,
+              "margin": 2134,
+              "margin_pct": 12.19,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "D_SAFE",
+                "color": "#6baed6"
+              },
+              "all_parties": {
+                "DEM": 9818,
+                "REP": 7684,
+                "IND": 966
+              }
+            },
+            "PONTOTOC": {
+              "county": "PONTOTOC",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 6525,
+              "rep_votes": 7042,
+              "other_votes": 1058,
+              "total_votes": 14625,
+              "two_party_total": 13567,
+              "margin": 517,
+              "margin_pct": 3.81,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Republican",
+                "code": "R_LEAN",
+                "color": "#fcae91"
+              },
+              "all_parties": {
+                "DEM": 6525,
+                "REP": 7042,
+                "IND": 1058
+              }
+            },
+            "POTTAWATOMIE": {
+              "county": "POTTAWATOMIE",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 9948,
+              "rep_votes": 13300,
+              "other_votes": 2283,
+              "total_votes": 25531,
+              "two_party_total": 23248,
+              "margin": 3352,
+              "margin_pct": 14.42,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "R_SAFE",
+                "color": "#ef3b2c"
+              },
+              "all_parties": {
+                "DEM": 9948,
+                "REP": 13300,
+                "IND": 2283
+              }
+            },
+            "PUSHMATAHA": {
+              "county": "PUSHMATAHA",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 2699,
+              "rep_votes": 1778,
+              "other_votes": 254,
+              "total_votes": 4731,
+              "two_party_total": 4477,
+              "margin": 921,
+              "margin_pct": 20.57,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Democratic",
+                "code": "D_STRONGHOLD",
+                "color": "#3182bd"
+              },
+              "all_parties": {
+                "DEM": 2699,
+                "REP": 1778,
+                "IND": 254
+              }
+            },
+            "ROGER MILLS": {
+              "county": "ROGER MILLS",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 594,
+              "rep_votes": 1029,
+              "other_votes": 127,
+              "total_votes": 1750,
+              "two_party_total": 1623,
+              "margin": 435,
+              "margin_pct": 26.8,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "R_STRONGHOLD",
+                "color": "#cb181d"
+              },
+              "all_parties": {
+                "DEM": 594,
+                "REP": 1029,
+                "IND": 127
+              }
+            },
+            "ROGERS": {
+              "county": "ROGERS",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 15740,
+              "rep_votes": 19645,
+              "other_votes": 1270,
+              "total_votes": 36655,
+              "two_party_total": 35385,
+              "margin": 3905,
+              "margin_pct": 11.04,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "R_SAFE",
+                "color": "#ef3b2c"
+              },
+              "all_parties": {
+                "DEM": 15740,
+                "REP": 19645,
+                "IND": 1270
+              }
+            },
+            "SEMINOLE": {
+              "county": "SEMINOLE",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 4304,
+              "rep_votes": 4128,
+              "other_votes": 729,
+              "total_votes": 9161,
+              "two_party_total": 8432,
+              "margin": 176,
+              "margin_pct": 2.09,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Democratic",
+                "code": "D_LEAN",
+                "color": "#c6dbef"
+              },
+              "all_parties": {
+                "DEM": 4304,
+                "REP": 4128,
+                "IND": 729
+              }
+            },
+            "SEQUOYAH": {
+              "county": "SEQUOYAH",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 7700,
+              "rep_votes": 6468,
+              "other_votes": 413,
+              "total_votes": 14581,
+              "two_party_total": 14168,
+              "margin": 1232,
+              "margin_pct": 8.7,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Democratic",
+                "code": "D_LIKELY",
+                "color": "#9ecae1"
+              },
+              "all_parties": {
+                "DEM": 7700,
+                "REP": 6468,
+                "IND": 413
+              }
+            },
+            "STEPHENS": {
+              "county": "STEPHENS",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 7116,
+              "rep_votes": 10138,
+              "other_votes": 1643,
+              "total_votes": 18897,
+              "two_party_total": 17254,
+              "margin": 3022,
+              "margin_pct": 17.51,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "R_SAFE",
+                "color": "#ef3b2c"
+              },
+              "all_parties": {
+                "DEM": 7116,
+                "REP": 10138,
+                "IND": 1643
+              }
+            },
+            "TEXAS": {
+              "county": "TEXAS",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 1554,
+              "rep_votes": 4576,
+              "other_votes": 230,
+              "total_votes": 6360,
+              "two_party_total": 6130,
+              "margin": 3022,
+              "margin_pct": 49.3,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Annihilation",
+                "party": "Republican",
+                "code": "R_ANNIHILATION",
+                "color": "#67000d"
+              },
+              "all_parties": {
+                "DEM": 1554,
+                "REP": 4576,
+                "IND": 230
+              }
+            },
+            "TILLMAN": {
+              "county": "TILLMAN",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 1874,
+              "rep_votes": 1288,
+              "other_votes": 206,
+              "total_votes": 3368,
+              "two_party_total": 3162,
+              "margin": 586,
+              "margin_pct": 18.53,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "D_SAFE",
+                "color": "#6baed6"
+              },
+              "all_parties": {
+                "DEM": 1874,
+                "REP": 1288,
+                "IND": 206
+              }
+            },
+            "TULSA": {
+              "county": "TULSA",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 101128,
+              "rep_votes": 141020,
+              "other_votes": 8864,
+              "total_votes": 251012,
+              "two_party_total": 242148,
+              "margin": 39892,
+              "margin_pct": 16.47,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "R_SAFE",
+                "color": "#ef3b2c"
+              },
+              "all_parties": {
+                "DEM": 101128,
+                "REP": 141020,
+                "IND": 8864
+              }
+            },
+            "WAGONER": {
+              "county": "WAGONER",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 11162,
+              "rep_votes": 15963,
+              "other_votes": 935,
+              "total_votes": 28060,
+              "two_party_total": 27125,
+              "margin": 4801,
+              "margin_pct": 17.7,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "R_SAFE",
+                "color": "#ef3b2c"
+              },
+              "all_parties": {
+                "DEM": 11162,
+                "REP": 15963,
+                "IND": 935
+              }
+            },
+            "WASHINGTON": {
+              "county": "WASHINGTON",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 8259,
+              "rep_votes": 13951,
+              "other_votes": 1004,
+              "total_votes": 23214,
+              "two_party_total": 22210,
+              "margin": 5692,
+              "margin_pct": 25.63,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "R_STRONGHOLD",
+                "color": "#cb181d"
+              },
+              "all_parties": {
+                "DEM": 8259,
+                "REP": 13951,
+                "IND": 1004
+              }
+            },
+            "WASHITA": {
+              "county": "WASHITA",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 2076,
+              "rep_votes": 2484,
+              "other_votes": 441,
+              "total_votes": 5001,
+              "two_party_total": 4560,
+              "margin": 408,
+              "margin_pct": 8.95,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Republican",
+                "code": "R_LIKELY",
+                "color": "#fb6a4a"
+              },
+              "all_parties": {
+                "DEM": 2076,
+                "REP": 2484,
+                "IND": 441
+              }
+            },
+            "WOODS": {
+              "county": "WOODS",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 1369,
+              "rep_votes": 2208,
+              "other_votes": 454,
+              "total_votes": 4031,
+              "two_party_total": 3577,
+              "margin": 839,
+              "margin_pct": 23.46,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "R_STRONGHOLD",
+                "color": "#cb181d"
+              },
+              "all_parties": {
+                "DEM": 1369,
+                "REP": 2208,
+                "IND": 454
+              }
+            },
+            "WOODWARD": {
+              "county": "WOODWARD",
+              "contest": "U.S. SENATE",
+              "year": "2004",
+              "dem_candidate": "Brad Carson",
+              "rep_candidate": "Tom Coburn",
+              "dem_votes": 2228,
+              "rep_votes": 4589,
+              "other_votes": 758,
+              "total_votes": 7575,
+              "two_party_total": 6817,
+              "margin": 2361,
+              "margin_pct": 34.63,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Dominant",
+                "party": "Republican",
+                "code": "R_DOMINANT",
+                "color": "#a50f15"
+              },
+              "all_parties": {
+                "DEM": 2228,
+                "REP": 4589,
+                "IND": 758
               }
             }
           }
