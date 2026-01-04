@@ -354,7 +354,7 @@ def parse_old_format_csv(filepath, year, office_name):
                             party = party_abbr
                         
                         candidates_info.append({
-                            'index': i + 1,  # +1 because data rows have county in column 0
+                            'index': i,  # Header already has empty column 0 for county
                             'name': name,
                             'party': party
                         })
